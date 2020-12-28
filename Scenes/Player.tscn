@@ -1,0 +1,237 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://Scripts/Player.cs" type="Script" id=3]
+[ext_resource path="res://Sprites/bard.png" type="Texture" id=4]
+[ext_resource path="res://Shaders/outline.tres" type="Material" id=5]
+
+[sub_resource type="CircleShape2D" id=1]
+
+[sub_resource type="Animation" id=2]
+resource_name = "Bard_Idle_E"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("bard:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 0 ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "Bard_Idle_N"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("bard:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 9 ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "Bard_Idle_S"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("bard:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 6 ]
+}
+
+[sub_resource type="Animation" id=5]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("bard:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 3 ]
+}
+
+[sub_resource type="Animation" id=6]
+loop = true
+step = 0.125
+tracks/0/type = "value"
+tracks/0/path = NodePath("bard:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 0, 2 ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "Bard_Shoot_N"
+loop = true
+step = 0.125
+tracks/0/type = "value"
+tracks/0/path = NodePath("bard:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 9, 11 ]
+}
+
+[sub_resource type="Animation" id=8]
+resource_name = "Bard_Shoot_S"
+loop = true
+step = 0.125
+tracks/0/type = "value"
+tracks/0/path = NodePath("bard:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 6, 8 ]
+}
+
+[sub_resource type="Animation" id=9]
+loop = true
+step = 0.125
+tracks/0/type = "value"
+tracks/0/path = NodePath("bard:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 3, 5 ]
+}
+
+[sub_resource type="Animation" id=10]
+loop = true
+step = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("bard:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 0, 1 ]
+}
+
+[sub_resource type="Animation" id=11]
+resource_name = "Bard_Walk_N"
+loop = true
+step = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("bard:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 9, 10 ]
+}
+
+[sub_resource type="Animation" id=12]
+loop = true
+step = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("bard:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 6, 7 ]
+}
+
+[sub_resource type="Animation" id=13]
+loop = true
+step = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("bard:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 3, 4 ]
+}
+
+[node name="Player" type="KinematicBody2D"]
+scale = Vector2( 5, 5 )
+collision_mask = 0
+script = ExtResource( 3 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 0, -32 )
+rotating = true
+current = true
+zoom = Vector2( 0.9, 0.9 )
+
+[node name="bard" type="Sprite" parent="."]
+material = ExtResource( 5 )
+position = Vector2( 0, -1.6 )
+texture = ExtResource( 4 )
+vframes = 4
+hframes = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2( 0.24, 0.24 )
+shape = SubResource( 1 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Bard_Idle_E = SubResource( 2 )
+anims/Bard_Idle_N = SubResource( 3 )
+anims/Bard_Idle_S = SubResource( 4 )
+anims/Bard_Idle_W = SubResource( 5 )
+anims/Bard_Shoot_E = SubResource( 6 )
+anims/Bard_Shoot_N = SubResource( 7 )
+anims/Bard_Shoot_S = SubResource( 8 )
+anims/Bard_Shoot_W = SubResource( 9 )
+anims/Bard_Walk_E = SubResource( 10 )
+anims/Bard_Walk_N = SubResource( 11 )
+anims/Bard_Walk_S = SubResource( 12 )
+anims/Bard_Walk_W = SubResource( 13 )

@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scenes/Projectiles/Projectile.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scripts/Projectiles/Projectile1.cs" type="Script" id=2]
+[ext_resource path="res://Sprites/Projectiles/proj1.png" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+[node name="Projectile1" instance=ExtResource( 1 )]
+script = ExtResource( 2 )
+
+[node name="proj1" type="Sprite" parent="." index="0"]
+position = Vector2( -2.828, 0 )
+rotation = 0.785398
+scale = Vector2( 5, 5 )
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
+position = Vector2( 4.24, 0 )
+rotation = 0.785398
+scale = Vector2( 0.5, 0.5 )
+shape = SubResource( 1 )
